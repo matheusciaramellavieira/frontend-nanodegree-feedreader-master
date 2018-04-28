@@ -48,7 +48,7 @@ $(function() {
 		it("name not undefined, null or empty", function() {
 			allFeeds.forEach(f => {
 				expect(f.name).toBeDefined();
-				expect(f.name != null).toBeTruthy();
+				expect(f.name !== null).toBeTruthy();
 				expect(f.name.length).not.toBe(0);
 			});
 		});
